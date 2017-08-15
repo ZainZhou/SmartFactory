@@ -37,6 +37,10 @@
   margin-top: 5%;
   height: 25%;
 }
+.steps_container .step5 .raw_material {
+  margin-top: 7%;
+  height: 16%;
+}
 .steps_container .step3 .clip {
   display: block;
   margin: 0 auto;
