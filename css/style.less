@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.steps_container{
+  display: none;
+  width: 85%;
+  margin: 5% auto;
+  list-style: none;
+  overflow: hidden;
+  padding: 7px;
+  .raw_material{
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  .step1{
+    .sgun{
+      width: 40%;
+      float: left;
+    }
+    .raw_material{
+      float: left;
+      width: 20%;
+      height: 100%;
+    }
+  }
+  .step2,.step5{
+    .fire{
+      display: block;
+      margin: 0 auto;
+      margin-top: 10%;
+      height: 50%;
+    }
+    .raw_material{
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 5%;
+      height: 25%;
+    }
+  }
+  .step3{
+    .clip{
+      display: block;
+      margin: 0 auto;
+      height: 100%;
+    }
+  }
+  .step4{
+    .raw_material{
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 5%;
+      height: 25%;
+    }
+    img{
+      width: 40%;
+    }
+    .sgunl{
+      float: left;
+    }
+    .sgunr{
+      float: right;
+    }
+  }
+  .step6{
+    img{
+      width: 100%;
+      margin-top: 5%;
+    }
+  }
+  li{
+    float: left;
+    width: 26%;
+    padding: 2%;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #333333;
+    &:hover{
+      box-shadow:0 0 0 5px #cccccc;
+    }
+  }
+}

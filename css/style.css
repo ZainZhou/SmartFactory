@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.steps_container {
+  display: none;
+  width: 85%;
+  margin: 5% auto;
+  list-style: none;
+  overflow: hidden;
+  padding: 7px;
+}
+.steps_container .raw_material {
+  border-radius: 10px;
+  background: #ffffff;
+}
+.steps_container .step1 .sgun {
+  width: 40%;
+  float: left;
+}
+.steps_container .step1 .raw_material {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+.steps_container .step2 .fire,
+.steps_container .step5 .fire {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10%;
+  height: 50%;
+}
+.steps_container .step2 .raw_material,
+.steps_container .step5 .raw_material {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 5%;
+  height: 25%;
+}
+.steps_container .step3 .clip {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+.steps_container .step4 .raw_material {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 5%;
+  height: 25%;
+}
+.steps_container .step4 img {
+  width: 40%;
+}
+.steps_container .step4 .sgunl {
+  float: left;
+}
+.steps_container .step4 .sgunr {
+  float: right;
+}
+.steps_container .step6 img {
+  width: 100%;
+  margin-top: 5%;
+}
+.steps_container li {
+  float: left;
+  width: 26%;
+  padding: 2%;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #333333;
+}
+.steps_container li:hover {
+  box-shadow: 0 0 0 5px #cccccc;
+}
