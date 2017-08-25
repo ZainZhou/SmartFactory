@@ -1,0 +1,15 @@
+.CodeRainBox{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left:0;
+    font-size: 22px;
+    font-family: "Microsoft YaHei";
+    height: 200px;
+    background: #000;
+    color: rgba(255,255,255,0.05);
+    text-shadow: 0 0 10px #fff;
+    word-break: break-all;
+    overflow: hidden;
+}
