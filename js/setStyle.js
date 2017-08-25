@@ -3,7 +3,7 @@
  */
 $(function(){
    aLi = $('.steps_container').find('li');
-    aLi.css({'height':$(window).width()*0.153});
+    aLi.css({'height':$(window).width()*0.1275});
     $('.steps_container').css('display','block');
     $('.CodeRainBox').css({'height':$(document.body).outerHeight(true)});
 });

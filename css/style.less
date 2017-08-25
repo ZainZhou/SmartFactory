@@ -11,14 +11,20 @@
   position: relative;
   padding: 7px;
   padding-top: 5%;
+  .arrow{
+    float: left;
+    width: 20%;
+    display: block;
+  }
   .raw_material{
     border-radius: 10px;
     background: #ffffff;
   }
   .step1{
     .sgun{
-      width: 40%;
-      float: left;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
     }
     .raw_material{
       float: left;
@@ -42,7 +48,7 @@
   }
   .step2{
     animation: warning 1s infinite linear;
-    background: red;
+    background: #d02121;
   }
   .step5{
     .raw_material{
@@ -82,15 +88,13 @@
   }
   li{
     float: left;
-    width: 18%;
-    padding: 3%;
+    width: 15%;
+    padding: 2.5%;
     overflow: hidden;
     border-radius: 50%;
     cursor: pointer;
     background: #333333;
-    &:hover{
-      box-shadow:0 0 0 5px #cccccc;
-    }
+    opacity: 0.95;
   }
   .WarningPrompt{
     text-align: center;
@@ -101,18 +105,23 @@
 @keyframes warning {
   0%{
     transform: scale(0.8);
+    box-shadow: 0 0 5px 5px red;
   }
   25%{
-    transform: scale(1.0);
+    transform: scale(0.95);
+    box-shadow: 0 0 15px 15px red;
   }
   50%{
-    transform: scale(1.2);
+    transform: scale(1.0);
+    box-shadow: 0 0 30px 20px red;
   }
   75%{
-    transform: scale(1.0);
+    transform: scale(0.95);
+    box-shadow: 0 0 15px 15px red;
   }
   100%{
     transform: scale(0.8);
+    box-shadow: 0 0 5px 5px red;
   }
 
 }

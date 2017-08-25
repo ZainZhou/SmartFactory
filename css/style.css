@@ -12,13 +12,19 @@
   padding: 7px;
   padding-top: 5%;
 }
+.steps_container .arrow {
+  float: left;
+  width: 20%;
+  display: block;
+}
 .steps_container .raw_material {
   border-radius: 10px;
   background: #ffffff;
 }
 .steps_container .step1 .sgun {
-  width: 40%;
-  float: left;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 .steps_container .step1 .raw_material {
   float: left;
@@ -41,7 +47,7 @@
 }
 .steps_container .step2 {
   animation: warning 1s infinite linear;
-  background: red;
+  background: #d02121;
 }
 .steps_container .step5 .raw_material {
   margin-top: 7%;
@@ -73,15 +79,13 @@
 }
 .steps_container li {
   float: left;
-  width: 18%;
-  padding: 3%;
+  width: 15%;
+  padding: 2.5%;
   overflow: hidden;
   border-radius: 50%;
   cursor: pointer;
   background: #333333;
-}
-.steps_container li:hover {
-  box-shadow: 0 0 0 5px #cccccc;
+  opacity: 0.95;
 }
 .steps_container .WarningPrompt {
   text-align: center;
@@ -91,17 +95,22 @@
 @keyframes warning {
   0% {
     transform: scale(0.8);
+    box-shadow: 0 0 5px 5px red;
   }
   25% {
-    transform: scale(1);
+    transform: scale(0.95);
+    box-shadow: 0 0 15px 15px red;
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1);
+    box-shadow: 0 0 30px 20px red;
   }
   75% {
-    transform: scale(1);
+    transform: scale(0.95);
+    box-shadow: 0 0 15px 15px red;
   }
   100% {
     transform: scale(0.8);
+    box-shadow: 0 0 5px 5px red;
   }
 }

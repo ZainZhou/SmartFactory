@@ -33,5 +33,6 @@ $(function(){
             CC.html(coding)
         }
     ,150);
-    CC.html(coding)
+    CC.html(coding);
+    console.log(num_arr.length)
 });
