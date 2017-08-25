@@ -39,6 +39,10 @@
   margin-top: 5%;
   height: 25%;
 }
+.steps_container .step2 {
+  animation: warning 1s infinite linear;
+  background: red;
+}
 .steps_container .step5 .raw_material {
   margin-top: 7%;
   height: 16%;
@@ -78,4 +82,26 @@
 }
 .steps_container li:hover {
   box-shadow: 0 0 0 5px #cccccc;
+}
+.steps_container .WarningPrompt {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+@keyframes warning {
+  0% {
+    transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
 }

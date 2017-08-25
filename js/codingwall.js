@@ -4,8 +4,8 @@
 $(function(){
     var w = $(document.body).outerWidth(true);
     var h = $(document.body).outerHeight(true);
-    var l_num = Math.ceil(w/8);
-    var c_num = Math.ceil(h/18);
+    var l_num = Math.ceil(w/15);
+    var c_num = Math.ceil(h/32);
     var CC = $('.CodeRainBox');
     var num_arr = [];
     for(var i = 0; i < l_num; i++){
