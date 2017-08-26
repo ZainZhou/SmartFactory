@@ -9,8 +9,16 @@
   list-style: none;
   overflow: hidden;
   position: relative;
-  padding: 7px;
-  padding-top: 5%;
+  padding: 3% 30px;
+}
+.steps_container .arrowBox {
+  width: 100%;
+  float: left;
+}
+.steps_container .arrowBox img {
+  width: 15%;
+  margin-right: 2.5%;
+  float: right;
 }
 .steps_container .arrow {
   float: left;
@@ -45,7 +53,7 @@
   margin-top: 5%;
   height: 25%;
 }
-.steps_container .step2 {
+.steps_container .step6 {
   animation: warning 1s infinite linear;
   background: #d02121;
 }
