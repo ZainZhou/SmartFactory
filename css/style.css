@@ -17,12 +17,12 @@
 }
 .steps_container .arrowBox img {
   width: 15%;
-  margin-right: 2.5%;
   float: right;
 }
 .steps_container .arrow {
   float: left;
-  width: 20%;
+  width: 15%;
+  padding: 2.5%;
   display: block;
 }
 .steps_container .raw_material {
@@ -52,10 +52,6 @@
   margin: 0 auto;
   margin-top: 5%;
   height: 25%;
-}
-.steps_container .step6 {
-  animation: warning 1s infinite linear;
-  background: #d02121;
 }
 .steps_container .step5 .raw_material {
   margin-top: 7%;

@@ -2,10 +2,72 @@
 <html>
 <head>
 	<title>test</title>
+	<style type="text/css">
+		:root{
+			font-size: 16px;
+			--maincube:400px;
+			--smallcube:200px;
+			--smarllercube:100px;
+		}
+		#main-wrapper{
+			position: relative;
+			margin: 5em auto;
+			width:var(--maincube); height:var(--maincube);
+			perspective: 1000px;
+		}
+		.cube {
+		  position:absolute;
+		  top:calc(50% - var(--cubesize) / 2);
+		  right:calc(50% - var(--cubesize) / 2);
+		  width:var(--cubesize); height:var(--cubesize);
+		  transform-style:preserve-3d;
+		  transform: translateZ(calc(-1 * var(--cubesize) / 2));
+		  animation: subcuberotation 3s linear infinite;
+		}
+		.cube > div:not(.cube) {
+		  position:absolute;
+		  background:rgba(241, 248, 244, 0.49);
+		  width:var(--cubesize); height:var(--cubesize);
+		  border:1px solid rgb(66, 153, 205);
+		}
+		.cube > .front  { transform:rotateY(   0deg ) translateZ(calc(var(--cubesize) / 2)); }
+		.cube > .back   { transform:rotateX( 180deg ) translateZ(calc(var(--cubesize) / 2)); }
+		.cube > .right  { transform:rotateY(  90deg ) translateZ(calc(var(--cubesize) / 2)); }
+		.cube > .left   { transform:rotateY( -90deg ) translateZ(calc(var(--cubesize) / 2)); }
+		.cube > .top    { transform:rotateX(  90deg ) translateZ(calc(var(--cubesize) / 2)); }
+		.cube > .bottom { transform:rotateX( -90deg ) translateZ(calc(var(--cubesize) / 2)); }
+		@keyframes subcuberotation {
+		  0%   { transform:rotateY(    0deg ); }
+		  100% { transform:rotateY(   360deg ); }
+		}
+	</style>
 </head>
 <body>
-	<div style="text-shadow:0 0 10px black;opacity:0.8;font-size: 30px;width: auto;line-height: 30px">
-	<span>1</span>
+	<div id="main-wrapper">
+		<div id="maincube" class="cube" style="--cubesize:400px;">
+			<div class="front"></div>
+			<div class="back"></div>
+			<div class="right"></div>
+			<div class="left"></div>
+			<div class="top"></div>
+			<div class="bottom"></div>
+			<div class="cube" style="--cubesize:200px;">
+				<div class="front"></div>
+			    <div class="back"></div>
+			    <div class="right"></div>
+			    <div class="left"></div>
+			    <div class="top"></div>
+			    <div class="bottom"></div>
+				<div class="cube" style="--cubesize:100px;">
+					<div class="front"></div>
+				    <div class="back"></div>
+				    <div class="right"></div>
+				    <div class="left"></div>
+				    <div class="top"></div>
+				    <div class="bottom"></div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
